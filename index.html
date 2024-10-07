@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="list" class="color-options">
+      <div id="red" class="color-option" style="background-color: #f00"></div>
+      <div id="blue" class="color-option" style="background-color: #00f"></div>
+      <div id="green" class="color-option" style="background-color: #0f0"></div>
+      <div
+        id="yellow"
+        class="color-option"
+        style="background-color: #ff0"></div>
+      <div id="cyan" class="color-option" style="background-color: #0ff"></div>
+      <div
+        id="magenta"
+        class="color-option"
+        style="background-color: #f0f"></div>
+      <div
+        id="orange"
+        class="color-option"
+        style="background-color: #ffa500"></div>
+      <div
+        id="purple"
+        class="color-option"
+        style="background-color: #800080"></div>
+      <div
+        id="brown"
+        class="color-option"
+        style="background-color: #8b4513"></div>
+      <div id="black" class="color-option" style="background-color: #000"></div>
+      <div id="eraser" title="Стиралка">
+        <!-- SVG иконка стиралки -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <path
+            d="M54.13 9.87a7.94 7.94 0 00-11.25 0L7.87 44.87a8 8 0 000 11.26l4 4a8 8 0 0011.26 0l27.12-27.12a7.94 7.94 0 000-11.26zM42 9.27a4 4 0 115.66 5.66l-4.95 4.95-5.66-5.66zm-9.55 9.54l5.66 5.66L18.66 44 13 38.34zm-9.55 33l-5.66-5.66L18.66 44 24.34 50zM45 42l-3.34 3.34-5.66-5.66L39.34 36l5.66 5.66z" />
+        </svg>
+      </div>
+    </div>
+
+    <label for="brushSize">Размер кисти:</label>
+    <input type="range" id="brushSize" min="5" max="50" value="20" />
+
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </body>
+</html>
